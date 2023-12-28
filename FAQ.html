@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #008cff;
+        }
+
+        .faq-list {
+            list-style: none;
+            padding: 0;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ffae00;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .answer {
+            display: none;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ffae00;
+            border-radius: 5px;
+        }
+
+        .answer.show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Frequently Asked Questions</h1>
+
+    <ul class="faq-list">
+        <li>
+            <div class="question">Q: What is HTML?</div>
+            <div class="answer">A: HTML stands for HyperText Markup Language. It is the standard markup language for creating web pages and web applications.</div>
+        </li>
+        <li>
+            <div class="question">Q: What is CSS?</div>
+            <div class="answer">A: CSS stands for Cascading Style Sheets. It is a stylesheet language used for describing the look and formatting of a document written in HTML.</div>
+        </li>
+        <li>
+            <div class="question">Q: What is JavaScript?</div>
+            <div class="answer">A: JavaScript is a high-level, versatile programming language used for adding interactivity and dynamic content to web pages.</div>
+        </li>
+        <li>
+            <div class="question">Q: What is HTML?</div>
+            <div class="answer">A: HTML stands for HyperText Markup Language. It is the standard markup language for creating web pages and web applications.</div>
+        </li>
+        <li>
+            <div class="question">Q: What is CSS?</div>
+            <div class="answer">A: CSS stands for Cascading Style Sheets. It is a stylesheet language used for describing the look and formatting of a document written in HTML.</div>
+        </li>
+        <li>
+            <div class="question">Q: What is JavaScript?</div>
+            <div class="answer">A: JavaScript is a high-level, versatile programming language used for adding interactivity and dynamic content to web pages.</div>
+            <li>
+                <div class="question">Q: What is HTML?</div>
+                <div class="answer">A: HTML stands for HyperText Markup Language. It is the standard markup language for creating web pages and web applications.</div>
+            </li>
+            <li>
+                <div class="question">Q: What is CSS?</div>
+                <div class="answer">A: CSS stands for Cascading Style Sheets. It is a stylesheet language used for describing the look and formatting of a document written in HTML.</div>
+            </li>
+            <li>
+                <div class="question">Q: What is JavaScript?</div>
+                <div class="answer">A: JavaScript is a high-level, versatile programming language used for adding interactivity and dynamic content to web pages.</div>
+            </li>
+        </li>
+    </ul>
+
+    <script>
+        // JavaScript code to handle the click event and toggle the answer visibility
+        const questions = document.querySelectorAll('.question');
+
+        questions.forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                answer.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+
+</html>
